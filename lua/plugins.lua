@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig'
     use 'glepnir/lspsaga.nvim'
     use 'onsails/lspkind-nvim'
-    use 'kosayoda/nvim-lightbulb'
+--    use 'kosayoda/nvim-lightbulb'
     use 'mfussenegger/nvim-jdtls'
     use 'kabouzeid/nvim-lspinstall'
 
@@ -37,17 +37,17 @@ return require('packer').startup(function(use)
 
     -- Autocomplete
     use 'hrsh7th/nvim-compe'
-    use 'mattn/emmet-vim'
+--    use 'mattn/emmet-vim'
     use 'hrsh7th/vim-vsnip'
     use "rafamadriz/friendly-snippets"
     use 'ChristianChiarulli/html-snippets'
 
     -- Treesitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-    use 'p00f/nvim-ts-rainbow'
+--    use 'p00f/nvim-ts-rainbow'
     use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
-    use 'JoosepAlviste/nvim-ts-context-commentstring'
-    use 'windwp/nvim-ts-autotag'
+--    use 'JoosepAlviste/nvim-ts-context-commentstring'
+--    use 'windwp/nvim-ts-autotag'
 
     -- Icons
     use 'kyazdani42/nvim-web-devicons'
@@ -88,30 +88,30 @@ return require('packer').startup(function(use)
     -- use 'turbio/bracey.vim'
 
     -- Flutter
-    use 'thosakwe/vim-flutter'
+--    use 'thosakwe/vim-flutter'
 
     -- Registers
     -- use 'gennaro-tedesco/nvim-peekup'
 
     -- Navigation
-    use 'unblevable/quick-scope' -- hop may replace you
-    use 'phaazon/hop.nvim'
-    use 'kevinhwang91/rnvimr' -- telescope may fully replace you
+--    use 'unblevable/quick-scope' -- hop may replace you
+--    use 'phaazon/hop.nvim'
+--    use 'kevinhwang91/rnvimr' -- telescope may fully replace you
 
     -- General Plugins
     use 'liuchengxu/vim-which-key'
     use 'kevinhwang91/nvim-bqf'
-    use 'airblade/vim-rooter'
-    use 'ChristianChiarulli/dashboard-nvim'
-    use 'metakirby5/codi.vim'
+--    use 'airblade/vim-rooter'
+--    use 'ChristianChiarulli/dashboard-nvim'
+--    use 'metakirby5/codi.vim'
     use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
-    use 'voldikss/vim-floaterm'
-    use 'terrortylor/nvim-comment'
-    use 'monaqa/dial.nvim'
-    use 'junegunn/goyo.vim'
-    use 'andymass/vim-matchup'
+--    use 'voldikss/vim-floaterm'
+--    use 'terrortylor/nvim-comment'
+--    use 'monaqa/dial.nvim'
+--    use 'junegunn/goyo.vim'
+--    use 'andymass/vim-matchup'
     use 'MattesGroeger/vim-bookmarks'
-    use 'windwp/nvim-autopairs'
+--    use 'windwp/nvim-autopairs'
 
     -- TODO put this back when stable for indent lines
     -- vim.g.indent_blankline_space_char = ''
