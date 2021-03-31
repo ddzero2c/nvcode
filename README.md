@@ -22,7 +22,7 @@ This is also a community project, if you would like to see support for a feature
 Make sure you have the newest version of Neovim
 
 ``` bash
-bash <(curl -s https://raw.githubusercontent.com/ChristianChiarulli/nvim/master/utils/installer/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/ddzero2c/nvim/master/utils/installer/install.sh)
 ```
 
 After installation run `nvim` and then `:PackerInstall`
