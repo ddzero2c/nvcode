@@ -18,6 +18,11 @@ return require('packer').startup(function(use)
     -- Packer can manage itself as an optional plugin
     use 'wbthomason/packer.nvim'
 
+    -- Can't without
+    use 'tpope/vim-surround'
+    use 'tpope/vim-repeat'
+    use 'rlue/vim-barbaric'
+
     -- Information
     -- use 'nanotee/nvim-lua-guide'
 
