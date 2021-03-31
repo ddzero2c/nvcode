@@ -21,45 +21,15 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
-let g:which_key_map['/'] = 'comment toggle'
-let g:which_key_map[';'] = [ ':Dashboard'                                      , 'home screen' ]
-let g:which_key_map[','] = [ '<Plug>(emmet-expand-abbr)'                       , 'expand tags' ]
-let g:which_key_map['"'] = [ '<Plug>PeekupOpen'                                , 'registers' ]
 let g:which_key_map['?'] = [ ':NvimTreeFindFile'                               , 'find current file' ]
 let g:which_key_map['e'] = [ ':NvimTreeToggle'                                 , 'explorer' ]
-let g:which_key_map['f'] = [ ':Telescope find_files'                           , 'find files' ]
-let g:which_key_map['h'] = [ '<C-W>s'                                          , 'split below']
+let g:which_key_map['p'] = [ ':Telescope find_files'                           , 'find files' ]
+
 let g:which_key_map['M'] = [ ':MarkdownPreviewToggle'                          , 'markdown preview']
-let g:which_key_map['h'] = [ ':let @/ = ""'                                    , 'no highlight' ]
-let g:which_key_map['r'] = [ ':RnvimrToggle'                                   , 'ranger' ]
 " TODO create entire treesitter section
 let g:which_key_map['T'] = [ ':TSHighlightCapturesUnderCursor'                 , 'treesitter highlight' ]
-let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
-" TODO play nice with status line
-let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
 
 " Group mappings
-
-" . is for emmet
-let g:which_key_map['.'] = {
-      \ 'name' : '+emmet' ,
-      \ ',' : ['<Plug>(emmet-expand-abbr)'               , 'expand abbr'],
-      \ ';' : ['<plug>(emmet-expand-word)'               , 'expand word'],
-      \ 'u' : ['<plug>(emmet-update-tag)'                , 'update tag'],
-      \ 'd' : ['<plug>(emmet-balance-tag-inward)'        , 'balance tag in'],
-      \ 'D' : ['<plug>(emmet-balance-tag-outward)'       , 'balance tag out'],
-      \ 'n' : ['<plug>(emmet-move-next)'                 , 'move next'],
-      \ 'N' : ['<plug>(emmet-move-prev)'                 , 'move prev'],
-      \ 'i' : ['<plug>(emmet-image-size)'                , 'image size'],
-      \ '/' : ['<plug>(emmet-toggle-comment)'            , 'toggle comment'],
-      \ 'j' : ['<plug>(emmet-split-join-tag)'            , 'split join tag'],
-      \ 'k' : ['<plug>(emmet-remove-tag)'                , 'remove tag'],
-      \ 'a' : ['<plug>(emmet-anchorize-url)'             , 'anchorize url'],
-      \ 'A' : ['<plug>(emmet-anchorize-summary)'         , 'anchorize summary'],
-      \ 'm' : ['<plug>(emmet-merge-lines)'               , 'merge lines'],
-      \ 'c' : ['<plug>(emmet-code-pretty)'               , 'code pretty'],
-      \ }
-
 " a is for actions
 let g:which_key_map.a = {
       \ 'name' : '+actions' ,
@@ -205,28 +175,5 @@ let g:which_key_map.l = {
       \ }
       " \ 'H' : [':Lspsaga signature_help'             , 'signature_help'],
       " \ 'o' : [':Vista!!'                            , 'outline'],
-
-" t is for terminal
-let g:which_key_map.t = {
-      \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --wintype=normal --height=6'       , 'terminal'],
-      \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
-      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
-      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
-      \ 'n' : [':FloatermNew node'                              , 'node'],
-      \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
-      \ 'p' : [':FloatermNew python'                            , 'python'],
-      \ 'm' : [':FloatermNew lazynpm'                           , 'npm'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
-      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
-      \ 'u' : [':FloatermNew ncdu'                              , 'ncdu'],
-      \ }
-      " \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
-
-" let g:which_key_map.R = {
-"       \ 'name' : '+Find_Replace' ,
-"       \ 'f' : [':Farr --source=vimgrep'    , 'file'],
-"       \ 'p' : [':Farr --source=rgnvim'     , 'project'],
-"       \ }
 
 call which_key#register('<Space>', "g:which_key_map")

@@ -55,7 +55,7 @@ return require('packer').startup(function(use)
 
     -- Status Line and Bufferline
     use 'glepnir/galaxyline.nvim'
-    use 'romgrk/barbar.nvim'
+--    use 'romgrk/barbar.nvim'
 
     -- Telescope
     use 'nvim-lua/popup.nvim'
@@ -67,7 +67,7 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-tree.lua'
 
     -- Color
-    use 'christianchiarulli/nvcode-color-schemes.vim'
+    use 'ddzero2c/lumiere.vim'
     use 'norcalli/nvim-colorizer.lua'
     use 'sheerun/vim-polyglot'
 
